@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Greenr App</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0"/>
+
+
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/Supernice.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta name="robots" content="INDEX,FOLLOW">
+	<meta name="author" content="PBB">
+
+
+</head>
+
+<body class="hero grey-bg animate-in">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container force-fluid">
+        <div class="navbar-header">
+
+
+          <a class="navbar-brand half-img hideFF" href="index.html">
+          <img src="assets/images/greenr-logo-white-2x.png" width="" height="60" alt="Personal BlackBox logo" class="logo">
+          </a>
+
+        </div>
+      </div>
+    </nav>
+<div class="container" xmlns="http://www.w3.org/1999/html">
+   <div class="row">
+      <div class="width-300 center-block">
+         <h4>{{title}}</h4>
+         <form id="form" method="POST" action="{{actionUrl}}"
+               data-hide-on-success="{{hideOnSuccess}}"
+               data-submit-on-load="{{submitOnLoad}}"
+               class="well col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <label for="username" class="control-label col-lg-2 col-md-2 col-sm-2 col-xs-12">Username</label>
+               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <input id="username" name="username" type="text" class="fullwidth" value="{{username}}" required />
+               </div>
+            </div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <label for="verification_code" class="control-label col-lg-12 col-md-12 col-sm-12 col-xs-12">Verification&nbsp;Code</label>
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <input id="verification_code" name="verification_code" type="text" value="{{verificationCode}}" class="fullwidth" required />
+               </div>
+            </div>
+            {{#if submitOnLoad}}
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <button type="submit" class="btn btn-primary pull-right" style="display:none;">Submit</button>
+               </div>
+            </div>
+            {{else}}
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <button type="submit" class="btn btn-primary pull-right">Submit</button>
+               </div>
+            </div>
+            {{/if}}
+         </form>
+      </div>
+   </div>
+   <div class="row">
+      <div id="error" class="width-300 center-block " style="display:none;">
+         <div class="alert alert-danger" role="alert">
+            <strong>There was an error</strong> please try again.
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div id="processing" class="width-300 center-block " style="display:none;">
+         <div class="alert alert-info" role="alert">
+            <strong>Please wait</strong> processing your request.
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div id="complete" class="width-300 center-block " style="display:none;">
+         <div class="alert alert-success" role="alert">
+            <strong>Success!</strong> your account has been verified.
+         </div>
+      </div>
+   </div>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top - 54
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    	</script>
+
+
+  </body>
+
+  <script>
+	  $(function() {
+      $('a[href*="#contactus"]').click(function(){
+        $('.navbar-collapse').removeClass('in')
+        $('.navbar-collapse').addClass('out')
+      });
+    });
+
+  </script>
+
+  <script>
+    window.addEventListener("beforeunload", function () {
+      document.body.classList.add("animate-out");
+    });
+  </script>
+
+</html>

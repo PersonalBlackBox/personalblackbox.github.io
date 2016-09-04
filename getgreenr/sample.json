@@ -1,0 +1,74 @@
+{
+    "_id" : ObjectId("57361c9fcd9c05f6ea4ad3c2"),
+    "version" : 1,
+    "path" : [
+        "57291dbb3c8d111a3673173a",
+        "57291e493c8d111a3673173b"
+    ],
+    "name" : "Reduce Carbon Footprint",
+    "title" : "Reduce Carbon Footprint",
+    "badges" : [
+        {
+            "id" : "5773f67a033108a9db14f4a8",
+            "badgeImage" : "",
+            "title" : "Half the Battle",
+            "markdown" : "Congratulations, Getting started is half the battle!"
+        }
+    ],
+    "milestones" : [
+        {
+            "id" : "5773f67b033108a9db14f4a9",
+            "goalId" : "57361c9fcd9c05f6ea4ad3c2",
+            "name" : "battery recycling",
+            "title" : "Get greener by recycling batteries",
+            "subtitle" : "Eliminate toxic battery waste",
+            "description" : "Communities, municipalities and companies are working together on a solution",
+            "image" : "https://s3.amazonaws.com/www.pbb.me/kratos/heroImage.png",
+            "content" : {
+                "heroImage" : "https://s3.amazonaws.com/www.pbb.me/kratos/heroImage.png",
+                "title" : "Greener battery habits",
+                "markdown" : "# The harmful effects of battery consumption\n\nBatteries can contain elements such as cadmium, lead, mercury, copper, zinc, manganese, lithium, or potassium, which are all hazardous to the environment and also to human health.\n \nThese harmful substances permeate into the soil, groundwater and surface water through landfills and also release toxins into the air when they are burned in municipal waste combustors. Moreover, cadmium is easily taken up by plant roots and accumulates in fruits, vegetables and grass. The impure water and plants in turn are consumed by animals and human beings, who then fall prey to a host of ill-effects. \n \n# Private/Public partnership leads the way\n \nConsumer groups, manufacturers, and municipalities are moving forward to address this problem. Vermont has passed legislation (H 695) that established the nation’s first single-use battery stewardship requirement. And , the groups’ model bill will create a framework for managing both single-use and rechargeable batteries at end of life. Also, four leading battery interest groups – the Corporation for Battery Recycling (CBR), the leading battery manufacturers from the National Electrical Manufacturers Association (NEMA) such as Energizer, Duracell and Panasonic, PRBA – The Rechargeable Battery Association and Call2Recycle, Inc. joined forces to take shared responsibility and introduce nationwide legislation for the collection and recycling of all used primary, or single-use batteries, and rechargeable batteries. \n\n# What you can do?\n\n - Recycle your batteries. Most accept only rechargeable batteries.    \n - Use this site to find a location that accepts both single-use and rechargeable batteries.  http://www.call2recycle.org/\n - Support sustainable manufacturers\n \n\n----------\n\n`References`:\n \n - http://recyclebattery.org/battery-industry-leaders-unveil-the-first-ever-model-all-battery-recycling-bill/\n - http://www.frost.com/sublib/display-market-insight-top.do?id=20759887",
+                "buttonText" : "Take the survey!"
+            },
+            "quiz" : [
+                {
+                    "heroImage" : "https://s3.amazonaws.com/www.pbb.me/kratos/hero-image-quiz.png",
+                    "question" : "Would you return your used batteries if  you were near a recycling center?",
+                    "answers" : [
+                        {
+                            "answerText" : "Yes",
+                            "isCorrect" : true
+                        },
+                        {
+                            "answerText" : "No",
+                            "isCorrect" : true
+                        },
+                        {
+                            "answerText" : "Not sure",
+                            "isCorrect" : true
+                        }
+                    ],
+                    "isSurvey": true
+                }
+            ],
+            "coupon" : {
+                "heroImage" : "https://s3.amazonaws.com/www.pbb.me/kratos/hero-image-quiz.png",
+                "markdown" : "Buy batteries in bulk from Costco for maximum savings.  Prices as low as $.38/battery.",
+                "title" : "Battery deals",
+                "buttonText" : "View the deal",
+                "couponImage" : "https://s3.amazonaws.com/www.pbb.me/kratos/coupon-heroImage-1.png",
+                "redemptionLink" : "http://www.costco.com/Duracell-AAA-Alkaline-Batteries-32-Unit,--2%2B-Pack-Pricing.product.100085368.html",
+                "barcodeFormat" : "",
+                "barcodeValue" : "",
+                "termsAndConditions" : []
+            }
+        }
+    ],
+    "sponsor" : {
+        "name" : "",
+        "logo" : ""
+    },
+    "isSingleUse" : false,
+    "startsOn" : "2016-04-01T00:00:00.000Z",
+    "endsOn" : "2017-01-01T00:00:03.000Z"
+}
